@@ -6,9 +6,10 @@
     <script>
         var link = window.location.href.split("#");
         var res = link[0].split("/");
-        console.log(res[res.length-1].substring(6));
+        console.log("Got the URI");
+        //console.log(res[res.length-1].substring(6));
         var token = res[res.length-1].substring(6);
-        window.location = 'https://slobs-oauth://pronounAppTest';// + token;
+        window.location = 'slobs-oauth://pronounAppTest';// + token;
     </script>
         
     </body>
